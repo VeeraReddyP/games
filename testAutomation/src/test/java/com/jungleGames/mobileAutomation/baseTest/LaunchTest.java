@@ -21,16 +21,17 @@ public class LaunchTest extends BaseTestRun {
     LoginPage loginPage;
     @Steps
     DownloadPage downloadPage;
-    private String email = "testUser" + System.currentTimeMillis() + "@mail.com";
+    public static String email = "testUser" + System.currentTimeMillis() + "@mail.com";
     private String password = "test@1234";
 
-    @Before
+   /* @Before
     public void launchBrowser(){
-        DriverManager.getAppiumDriver().get("https://www.howzat.com/");
-    }
+
+    }*/
 
     @Test
     public void Test1_Register() {
+        DriverManager.getAppiumDriver().get("https://www.howzat.com/");
         registerPage.clickRegisterNow();
         registerPage.enterEmailRMobileData(email);
         registerPage.enterPassword(password);
@@ -39,16 +40,17 @@ public class LaunchTest extends BaseTestRun {
 
     @Test
     public void Test2_Login() {
+        DriverManager.getAppiumDriver().get("https://www.howzat.com/");
         loginPage.clickLoginBtn();
         loginPage.enterEmailRMobileData(email);
         loginPage.enterPassword(password);
         loginPage.clickLoginSubmit();
     }
 
-    @After
+    /*@After
     public void killBrowser(){
         DriverManager.getAppiumDriver().manage().deleteAllCookies();
-    }
+    }*/
 
     @Test
     public void Test3_Download() {
