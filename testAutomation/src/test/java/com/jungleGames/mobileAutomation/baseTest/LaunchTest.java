@@ -24,10 +24,7 @@ public class LaunchTest extends BaseTestRun {
     public static String email = "testUser" + System.currentTimeMillis() + "@mail.com";
     private String password = "test@1234";
 
-   /* @Before
-    public void launchBrowser(){
-
-    }*/
+  
 
     @Test
     public void Test1_Register() {
@@ -47,10 +44,7 @@ public class LaunchTest extends BaseTestRun {
         loginPage.clickLoginSubmit();
     }
 
-    /*@After
-    public void killBrowser(){
-        DriverManager.getAppiumDriver().manage().deleteAllCookies();
-    }*/
+  
 
     @Test
     public void Test3_Download() {
