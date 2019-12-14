@@ -1,0 +1,21 @@
+{
+  "android": {
+    "platformName": "android",
+    "automationName": "uiautomator2",
+    "newCommandTimeout": 60,
+    "deviceName": "Android",
+    "browserName":"Chrome",
+    "appPackage":"",
+    "nativeWebScreenshot":true,
+    "noReset": true
+  },
+  "iOS": {
+    "platformName": "iOS",
+    "platformVersion": "12.1.4",
+    "automationName": "XCUITest",
+    "bundleId" : "",
+    "noReset" : true,
+    "browserName":"Safari",
+    "udid":"00008020-000354922668002E"
+  }
+}
